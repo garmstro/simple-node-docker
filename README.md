@@ -13,3 +13,8 @@ To run the Docker image in a container use:
 docker run --name hello-world-app -d --rm -p 80:3000 simple-node-docker
 ```
 
+To run tests inside the Docker container use:
+
+```
+docker run --name hello-world-app-tests --rm simple-node-docker npm run test
+```
